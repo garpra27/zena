@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/custom.css" />
+  </head>
+  <body class="bg-gray-100">
+    <header>
+      <nav class="bg-white fixed w-full z-20 top-0 start-0">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="/index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >Zena</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              id="hamburger-menu"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="/index.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+                  aria-current="page"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/pengguna/terbaru.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+                  >Terbaru</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/pengguna/kategori.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+                  >Kategori</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/pengguna/terpopuler.html"
+                  class="block py-2 px-3 text-white bg-red-500 rounded md:bg-transparent md:text-red-500 md:p-0"
+                  >Terpopuler</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/pengguna/tentang.html"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+                  >Tentang</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-full mt-20 md:mt-12 md:p-8">
+      <article class="p-2 md:p-5 bg-white rounded-md">
+        <h1 class="text-2xl font-bold mb-6">Berita Terpopuler</h1>
+
+        <!-- Berita -->
+        <div
+          class="news-card bg-gray-50 hover:bg-gray-100 cursor-pointer h-28 md:h-52 rounded-lg mb-2 flex overflow-hidden"
+        >
+          <div class="card-head rounded-lg basis-3/12">
+            <img
+              class="object-fill w-full h-full"
+              src="https://akcdn.detik.net.id/community/media/visual/2023/12/29/momen-peluncuran-pesawat-luar-angkasa-robot-yang-dirahasiakan-as-dengan-roket-heavy-falcon-buatan-spacex-dari-florida_169.jpeg?w=700&q=90"
+              alt="gambar"
+            />
+          </div>
+          <div
+            class="card-body px-2 md:px-10 py-1 md:py-4 basis-9/12 flex flex-col justify-around md:justify-between"
+          >
+            <h2 class="text-base md:text-xl font-bold">
+              Lorem ipsum dolor sit amet consectetur
+            </h2>
+            <p class="text-xs md:text-base hidden md:block">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet. Lorem ipsum Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Porro natus error id saepe
+              distinctio libero nisi Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Inventore obcaecati porro veritatis suscipit
+              quae corporis praesentium! Eligendi possimus voluptatibus officia.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              quis?
+            </p>
+            <p class="text-xs md:text-sm font-bold">Mamat, 27 Desember 2023</p>
+          </div>
+        </div>
+        <!-- Berita -->
+        <div
+          class="news-card bg-gray-50 hover:bg-gray-100 cursor-pointer h-28 md:h-52 rounded-lg mb-2 flex overflow-hidden"
+        >
+          <div class="card-head rounded-lg basis-3/12">
+            <img
+              class="object-fill w-full h-full"
+              src="https://akcdn.detik.net.id/community/media/visual/2023/12/29/momen-peluncuran-pesawat-luar-angkasa-robot-yang-dirahasiakan-as-dengan-roket-heavy-falcon-buatan-spacex-dari-florida_169.jpeg?w=700&q=90"
+              alt="gambar"
+            />
+          </div>
+          <div
+            class="card-body px-2 md:px-10 py-1 md:py-4 basis-9/12 flex flex-col justify-around md:justify-between"
+          >
+            <h2 class="text-base md:text-xl font-bold">
+              Lorem ipsum dolor sit amet consectetur
+            </h2>
+            <p class="text-xs md:text-base hidden md:block">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet. Lorem ipsum Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Porro natus error id saepe
+              distinctio libero nisi Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Inventore obcaecati porro veritatis suscipit
+              quae corporis praesentium! Eligendi possimus voluptatibus officia.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              quis?
+            </p>
+            <p class="text-xs md:text-sm font-bold">Mamat, 27 Desember 2023</p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="bg-white">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >Zena</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0"
+          >
+            <li>
+              <a
+                href="/pages/pengguna/tentang.html"
+                class="hover:underline me-4 md:me-6"
+                >Tentang</a
+              >
+            </li>
+            <li>
+              <a href="/pages/pengguna/kontak.html" class="hover:underline"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center"
+          >© 2023 <a href="/index.html" class="hover:underline">Zena</a>. All
+          Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <script type="module" src="/script/index.js"></script>
+  </body>
+</html>
